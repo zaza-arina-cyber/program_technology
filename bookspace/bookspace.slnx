@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Application/" />
-  <Folder Name="/Domain/" />
+  <Folder Name="/Domain/">
+    <Project Path="Domain/Domain.ValueObjects/bookspace.ValueObjects.csproj" Id="398e48b9-4d6a-483b-8f59-45056ca14840" />
+  </Folder>
   <Folder Name="/Infrastructure/" />
   <Folder Name="/Presentation/" />
 </Solution>
