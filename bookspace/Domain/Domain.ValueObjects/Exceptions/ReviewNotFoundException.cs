@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.Exceptions
+namespace Domain.ValueObjects.Exceptions
 {
     public class ReviewNotFoundException : Exception
     {
