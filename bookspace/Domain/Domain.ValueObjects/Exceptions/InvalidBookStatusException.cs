@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Domain.ValueObjects.Exceptions
+﻿namespace Domain.ValueObjects.Exceptions
 {
     public class InvalidBookStatusException : Exception
     {
