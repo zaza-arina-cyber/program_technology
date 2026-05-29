@@ -9,6 +9,9 @@
     <File Path="Reader.cs" />
     <File Path="Review.cs" />
   </Folder>
+  <Folder Name="/Domain/Enums/">
+    <File Path="BookStatus.cs" />
+  </Folder>
   <Folder Name="/Infrastructure/" />
   <Folder Name="/Presentation/" />
 </Solution>
