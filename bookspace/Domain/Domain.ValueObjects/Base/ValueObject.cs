@@ -1,4 +1,4 @@
-﻿namespace bookspace.ValueObjects.Base;
+﻿namespace Bookspace.Domain.ValueObjects.Base;
 public abstract class ValueObject<T> : IEquatable<ValueObject<T>>
 {
     public T Value { get; }

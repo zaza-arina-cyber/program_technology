@@ -1,4 +1,4 @@
-﻿namespace bookspace.ValueObjects.Base;
+﻿namespace Bookspace.Domain.ValueObjects.Base;
 
 /// <summary>
 /// Defines a method that implements the validation of the object.

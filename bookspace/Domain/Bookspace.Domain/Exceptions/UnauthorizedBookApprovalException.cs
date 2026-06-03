@@ -1,6 +1,6 @@
-﻿using BookService.Domain;
+﻿using Bookspace.Domain;
 
-namespace BookService.Domain.Exceptions
+namespace Bookspace.Domain.Exceptions
 {
     public class UnauthorizedBookApprovalException(Reader reader, Book book)
         : InvalidOperationException(

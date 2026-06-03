@@ -1,6 +1,6 @@
-﻿using BookService.Domain;
+﻿using Bookspace.Domain;
 
-namespace BookService.Domain.Exceptions
+namespace Bookspace.Domain.Exceptions
 {
     public class BookNotFoundException(Guid bookId)
         : InvalidOperationException($"Book with id '{bookId}' was not found.")

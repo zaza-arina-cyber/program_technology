@@ -1,6 +1,7 @@
-﻿using BookService.Domain.Base;
+﻿using Bookspace.Domain.Base;
+using Bookspace.Domain.ValueObjects;
 
-namespace BookService.Domain
+namespace Bookspace.Domain
 {
     public enum BookStatus
     {
@@ -11,22 +12,26 @@ namespace BookService.Domain
 
     public class Book : Entity<Guid>
     {
-        public string Title { get; set; }
-        public string Author { get; set; }
+        public BookTitle Title { get; set; }
+        public BookAuthor Author { get; set; }
         public BookStatus Status { get; set; }
         public Guid? RequestedBy { get; set; }
         public Guid? ProcessedBy { get; set; }
 
-        public Book(Guid id, string title, string author, BookStatus status,
+        public Book(Guid id, BookTitle title, BookAuthor author, BookStatus status,
                     Guid? requestedBy = null, Guid? processedBy = null) : base(id)
         {
-            Title = title;
-            Author = author;
+            Title = title ?? throw new ArgumentNullException(nameof(title));
+            Author = author ?? throw new ArgumentNullException(nameof(author));
             Status = status;
             RequestedBy = requestedBy;
             ProcessedBy = processedBy;
         }
 
-        protected Book() : base() { }
+        protected Book() : base()
+        {
+            Title = null!;
+            Author = null!;
+        }
     }
 }

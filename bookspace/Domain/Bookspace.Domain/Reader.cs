@@ -1,16 +1,17 @@
-﻿using BookService.Domain.Base;
+﻿using Bookspace.Domain.Base;
+using Bookspace.Domain.ValueObjects;
 
-namespace BookService.Domain
+namespace Bookspace.Domain
 {
     public class Reader : Entity<Guid>
     {
-        public string Username { get; set; }
+        public Username Username { get; set; }
 
-        public Reader(Guid id, string username) : base(id)
+        public Reader(Guid id, Username username) : base(id)
         {
-            Username = username;
+            Username = username ?? throw new ArgumentNullException(nameof(username));
         }
 
-        protected Reader() : base() { }
+        protected Reader() : base() => Username = null!;
     }
 }

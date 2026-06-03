@@ -1,6 +1,6 @@
-﻿using BookService.Domain;
+﻿using Bookspace.Domain;
 
-namespace BookService.Domain.Exceptions
+namespace Bookspace.Domain.Exceptions
 {
     public class AnotherReaderDeleteReviewException(Review review, Reader reader)
         : InvalidOperationException(
