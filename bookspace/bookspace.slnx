@@ -1,16 +1,8 @@
 <Solution>
   <Folder Name="/Application/" />
   <Folder Name="/Domain/">
+    <Project Path="Domain/Bookspace.Domain/bookspace.Domain.csproj" Id="c01b7c67-3667-4687-88ee-bb18d82b2573" DisplayName="Bookspace.Domain" />
     <Project Path="Domain/Domain.ValueObjects/bookspace.ValueObjects.csproj" Id="398e48b9-4d6a-483b-8f59-45056ca14840" />
-  </Folder>
-  <Folder Name="/Domain/Entities/">
-    <File Path="Book.cs" />
-    <File Path="Librarian.cs" />
-    <File Path="Reader.cs" />
-    <File Path="Review.cs" />
-  </Folder>
-  <Folder Name="/Domain/Enums/">
-    <File Path="BookStatus.cs" />
   </Folder>
   <Folder Name="/Infrastructure/" />
   <Folder Name="/Presentation/" />
